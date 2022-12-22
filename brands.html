@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tetra Sole</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Main content-->
+        <header>
+            <div class="logo"><a href="home.html"><img src="images/Logo/logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#nike">Nike<span></span></a></p>
+                            <p><a href="brands.html#adidas">Adidas<span></span></a></p>
+                            <p><a href="brands.html#converse">Converse<span></span></a></p>
+                            <p><a href="brands.html#vans">Vans<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+
+        
+        <!--brands front-->
+        <div class="front-shoe-brands-container">
+            <div class="text">
+                <h1>SHOES</h1>
+            </div>
+        </div>
+
+
+        <!--Nike Products-->
+        <div class="nikes-container" id="nike">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Nike Products</h1>
+                </div>
+                <div class="shoe-items">
+                    <div class="w3-card card" id="drake" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/air-jordan-3-wizards-1.png" alt="" class="product-img"></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Air Jordan 3 Wizards</p>
+                            <div class="price-cart">
+                                <p class="price" price="11295">Php 11,295.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/air-jordan-36-low-infrared-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Air Jordan 36 Low Infrared</p>
+                            <div class="price-cart">
+                                <p class="price" price="9195">Php 9,195.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/cloak-kobe-11-purple-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Kobe 11 Purple Invisibility Cloak</p>
+                            <div class="price-cart">
+                                <p class="price" price="9120">Php 9,120.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/dark-mocha-air-jordan-1-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Air Jordan 1 Dark Mocha high</p>
+                            <div class="price-cart">
+                                <p class="price" price="18999">Php 18,999.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" id="kdAuntPearl" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/Drake-Nike-Air-Force-1-Certified-Lover-Boy-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Drake Nike Air Force 1 Certified Lover Boy</p>
+                            <div class="price-cart">
+                                <p class="price" price="6499">Php 6,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/jordan-1-lost-and-found-release-price-1.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Jordan 1 Lost And Found</p>
+                            <div class="price-cart">
+                                <p class="price" price="23000">Php 23,000.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/nike-blazer-mid-77-bling-white-gold-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Nike Blazer Mid 77 Bling White Gold</p>
+                            <div class="price-cart">
+                                <p class="price" price="4995">Php 4,995.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/nike-kd-14-black-navy-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">nike kd 14 black navy</p>
+                            <div class="price-cart">
+                                <p class="price" price="7795">Php 7,795.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/nike-kd-15-aunt-pearl-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">nike kd 15 aunt pearl</p>
+                            <div class="price-cart">
+                                <p class="price" price="8895">Php 8,895.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/nike-kyrie-7-daughters-azurie-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">nike kyrie 7 daughters azurie</p>
+                            <div class="price-cart">
+                                <p class="price" price="6895">Php 6,895.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/nike-kyrie-low-5-orchid-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">nike kyrie low 5 orchid</p>
+                            <div class="price-cart">
+                                <p class="price" price="6195">Php 6,195.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/nikeShoes/nike-sb-dunk-high-oski-great-white-shark-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">sb dunk high oski great white shark</p>
+                            <div class="price-cart">
+                                <p class="price" price="5699">Php 5,699.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Adidas Products-->
+        <div class="adidas-container" id="adidas">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Adidas Products</h1>
+                </div>
+                <div class="shoe-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-D-Rose-11-Hazy-Pink-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">adidas D Rose 11 Hazy Pink</p>
+                            <div class="price-cart">
+                                <p class="price" price="3200">Php 3,200.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-Harden-Vol-5-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">adidas Harden Vol 5</p> 
+                            <div class="price-cart">
+                                <p class="price" price="3499">Php 3,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-Harden-Vol-6-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">adidas Harden Vol 6</p>
+                            <div class="price-cart">
+                                <p class="price" price="4899">Php 4,899.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-stan-smith-80s-white-green-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">stan smith 80s white green</p>
+                            <div class="price-cart">
+                                <p class="price" price="4799">Php 4,799.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-superstar-marge-simpson-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">adidas superstar marge simpson</p>
+                            <div class="price-cart">
+                                <p class="price" price="2879">Php 2,879.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-trae-young-1-icee-cotton-candy-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">trae young 1 ice cotton candy</p>
+                            <div class="price-cart">
+                                <p class="price" price="4499">Php 4,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-Yeezy-Boost-350-v2-Onyx-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Yeezy Boost 350 v2 Onyx</p>
+                            <div class="price-cart">
+                                <p class="price" price="24999">Php 24,999.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-yeezy-boost-700-v2-tephra-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">yeezy boost 700 v2 tephra</p>
+                            <div class="price-cart">
+                                <p class="price" price="18999">Php 18,999.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-yeezy-quantum-mono-carbon-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">yeezy quantum mono carbon</p>
+                            <div class="price-cart">
+                                <p class="price" price="4699">Php 4,699.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/adidas-yeezy-slide-resin-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">adidas yeezy slide resin</p>
+                            <div class="price-cart">
+                                <p class="price" price="9999">Php 9,999.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/yeezy-500-granite-shoes-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">yeezy 500 granite shoes</p>
+                            <div class="price-cart">
+                                <p class="price" price="11970">Php 11,970.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/adidasShoes/yeezy-foam-runner-sand-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">yeezy foam runner sand</p>
+                            <div class="price-cart">
+                                <p class="price" price="15499">Php 15,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Converse Products-->
+        <div class="converse-container" id="converse">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Converse Products</h1>
+                </div>
+                <div class="shoe-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/converseShoes/converse-chuck-70-essentials-blk-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">chuck 70 essentials black</p>
+                            <div class="price-cart">
+                                <p class="price" price="11799">Php 11,799.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" id="pokemon" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/converseShoes/converse-chuck-70-flames-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">converse chuck 70 flames</p>
+                            <div class="price-cart">
+                                <p class="price" price="8967">Php 8,967.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/converseShoes/converse-chuck-70-peanuts-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">converse chuck 70  peanuts</p>
+                            <div class="price-cart">
+                                <p class="price" price="6099">Php 6,099.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/converseShoes/converse-chuck-70-sky-high-farm-workwear-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">chuck 70 sky  high farm workwear</p>
+                            <div class="price-cart">
+                                <p class="price" price="8549">Php 8,549.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/converseShoes/converse-one-star-motion-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">converse one star  motion</p>
+                            <div class="price-cart">
+                                <p class="price" price="5499">Php 5,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/converseShoes/converse-pokemon-2.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">converse pokemon</p>
+                            <div class="price-cart">
+                                <p class="price" price="3584">Php 3,584.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/converseShoes/Tyler-The-Creator-Converse-By-You-Golf-Wang-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">Converse By You Golf  Wang</p>
+                            <div class="price-cart">
+                                <p class="price" price="5990">Php 5,990.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/converseShoes/tyler-the-creator-converse-chuck-70-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">tyler the creator converse chuck 70</p>
+                            <div class="price-cart">
+                                <p class="price" price="5990">Php 5,990.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Vans Products-->
+        <div class="vans-container" id="vans">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Vans Products</h1>
+                </div>
+                <div class="shoe-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/vansShoes/BLENDS-Vans-Vault-Sk8-Hi-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">BLENDS Vans Vault Sk8  Hi</p>
+                            <div class="price-cart">
+                                <p class="price" price="12539">Php 12,539.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/vansShoes/vans-flame-wall-1.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">vans flame wall</p>
+                            <div class="price-cart">
+                                <p class="price" price="2500">Php 2,500.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/vansShoes/vans-sk8-hi-offwhite-mimic-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">vans sk8 hi mimic   offwhite </p>
+                            <div class="price-cart">
+                                <p class="price" price="6695">Php 6,695.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="images/vansShoes/vans-surf-paradoxxx-navy-1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                                <div>
+                                    <label for="size">Size</label>
+                                    <input type="number" name="size" min="36" id="size" max="46" value="40">
+                                </div>
+                            </div>
+                            <p class="shoe-name">vans surf paradoxxx  navy</p>
+                            <div class="price-cart">
+                                <p class="price" price="4275">Php 4,275.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="images/Logo/logo.png">
+                    <p>Shoes From Which You Shine Through</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="footer-items/Order-and-Deliver.html">Order and Deliver</a></p>
+                    <p><a href="footer-items/size-guide.html">Size Guide</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="footer-Items/cancellation.html">Cancellation Policy</a></p>
+                    <p><a href="footer-Items/refund.html">Refund Policy</a></p>
+                    <p><a href="footer-Items/return-and-exchange.html">Return and Exchange</a></p>
+                    <p><a href="footer-Items/shipping.html">Shipping Policy</a></p>
+                    <p><a href="footer-Items/terms-and-condition.html">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2022, <a href="#">Tetra Sole</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

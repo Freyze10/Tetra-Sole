@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Us</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="home.html"><img src="images/Logo/logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#nike">Nike<span></span></a></p>
+                            <p><a href="brands.html#adidas">Adidas<span></span></a></p>
+                            <p><a href="brands.html#converse">Converse<span></span></a></p>
+                            <p><a href="brands.html#vans">Vans<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <!--Content-->
+
+        <div class="heading"><h1 class="w3-monospace">About us</h1></div>
+        <div class="about-us-container">
+            <div class="images-container">
+                <div class="our-images-container w3-animate-opacity">
+                    <div class="image">
+                        <img src="images/AboutUs/kirk.jpg">
+                        <p>Kirk Anthony Arjona</p>
+                    </div>
+                    <div class="image">
+                        <img src="images/AboutUs/Louie.jpg">
+                        <p>John Louie L. Santos</p>
+                    </div>
+                    <div class="image">
+                        <img src="images/AboutUs/Brant.jpg">
+                        <p>Brant Jan L. Abillanoza</p>
+                    </div>
+                    <div class="image">
+                        <img src="images/AboutUs/Charles.jpg">
+                        <p>Christian Charles G. Baltao</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-story-container">
+                <div class="our-story w3-animate-right">
+                    <h1>Our Story</h1>
+                    <p>
+                        We started by selling shoes as if we were only going to offer the shoes one order at a 
+                        time until we were recognized and recognized that we were okay selling shoes and according to 
+                        that we made a lot of money and we were able to build our own place and shop. thus this Tetra 
+                        Sole was formed
+                    </p>
+                    <p>
+                        The Tetra Sole is a new small shoe business and was derived from the word tetrad which means a 
+                        group of four and Sole comes from the shoe part itself. The Tetra Sole was founded by a group of 
+                        friends who all share the same passion for shoes and fashion, who want to make beautiful, comfortable 
+                        and stylish footwear that fits your feet perfectly. It's a brand that sticks to its simple design but with a twist of creativity.
+                    </p>
+                </div>
+            </div>
+        </div><hr>
+        <div class="shoe-expert-container">
+            <div class="left-part">
+                <div data-aos="fade-up">
+                    <h1>Shoe Experts</h1>
+                    <p>
+                        Leonardo da Vinci described the human foot as "a masterpiece of engineering and a work of art".
+                        And to make sure we can look after it better than anyone else, we've studied it. From the cradle 
+                        to old age. We've looked at the way it develops. We've scrutinised its biomechanics, the way it 
+                        moves at work, rest and play. We've deliberated on what it takes to keep feet healthy and happy. 
+                        And what we've learned is what helps us make the perfect shoes for you.
+                    </p>
+                </div>
+            </div>
+            <div class="right-part">
+                 <div class="shoe-expert-image w3-card" data-aos="flip-up">
+                    <img src="images/AboutUs/ShoeExpert.png">
+                 </div>
+            </div>
+        </div><hr>
+        <div class="iconic-footware-container">
+            <div class="left-part">
+                <div class="iconic-expert-image" data-aos="flip-down">
+                    <img src="images/AboutUs/iconic.png">
+                </div>
+            </div>
+            <div class="right-part" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <h1>ICONIC FOOTWEAR</h1>
+                <p>In our archive most styles are shoes that have sparked a revolution, defined a generation and captured the imagination.
+                    It provides long-lasting comfort by using modern elements such as the large Air element. When the shoes get tighter, the moves get lighter.
+                </p>
+            </div>
+        </div>
+
+
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="images/Logo/logo.png">
+                    <p>Shoes From Which You Shine Through</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="footer-items/Order-and-Deliver.html">Order and Deliver</a></p>
+                    <p><a href="footer-items/size-guide.html">Size Guide</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="footer-Items/cancellation.html">Cancellation Policy</a></p>
+                    <p><a href="footer-Items/refund.html">Refund Policy</a></p>
+                    <p><a href="footer-Items/return-and-exchange.html">Return and Exchange</a></p>
+                    <p><a href="footer-Items/shipping.html">Shipping Policy</a></p>
+                    <p><a href="footer-Items/terms-and-condition.html">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2022, <a href="home.html">Tetra Sole</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

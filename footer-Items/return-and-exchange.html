@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Return and Exchange - Tetra Sole</title>
+        <link rel="stylesheet" href="../css/w3.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="../home.html"><img src="../images/Logo/logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="../home.html">Home<span></span></a></li>
+                    <li><a href="../about.html">About Us<span></span></a></li>
+                    <li><a href="../brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="../brands.html#nike">Nike<span></span></a></p>
+                            <p><a href="../brands.html#adidas">Adidas<span></span></a></p>
+                            <p><a href="../brands.html#converse">Converse<span></span></a></p>
+                            <p><a href="../brands.html#vans">Vans<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="../contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <!--Content-->
+        <div class="return-and-exchange-container">
+            <h1>Return and Exchange Policy</h1>
+            <h3>GENERAL TERMS AND CONDITIONS:</h3>
+            <ul>
+                <li> 
+                    Purchased Items for return/exchange will undergo a screening process and subject for approval of Tetra Sole management. 
+                    All requests to shall be forwarded to inquire@tetraSole.ph
+                </li>
+                <li> Return/Exchange is allowed provided items are returned in good condition, with packaging and selling price tags intact.</li>
+                <li> 
+                    Return/exchange of item will only be allowed one time. Customer is required to double check their size via 
+                    the <a href="size-guide.html">size chart</a> and ensure request to be final. 
+                </li>
+                <li> 
+                    In case of unavailability of stock of the same brand and style customer purchased, replacement of a different style, 
+                    brand or colorway is allowed provided the amount purchased is equal to or above the price point of the purchased item. 
+                </li>
+                <li> 
+                    Should customer decide to replace an item with a higher price point of the original order, customer to pay for the 
+                    balance and applicable shipping fees.
+                </li>
+                <li> 
+                    Tetra Sole will consider the last resort to refund the purchased item if found to be irreplaceable due to 
+                    unavailability of stock/damage item.
+                </li>
+            </ul>
+            <h3>RETURN/EXCHANGE PROCESS:</h3>
+            <ul>
+                <li>Inform Tetra Sole</li>
+                <ul>
+                    <li> 
+                        Customer to send intent of return/exchange to inquire@tetraSole.ph within 7 days from receipt of item from 
+                        shipping provider. A Tetra SOle Customer Representative will reply to you via email and mobile to discuss 
+                        further steps of the process.
+                    </li>
+                    <li> Email to contain the ff details:</li>
+                    <ul>
+                        <li> Order Name</li>
+                        <li> Customer Details: Name, Mobile Number.</li>
+                        <li> Date Item was received</li>
+                        <li> Product Photos: in good condition, tags intact, pair of footwear (top, side, sole), sales invoice/official receipt 
+                            and way bill of shipping provider. </li>
+                    </ul>
+                </ul>
+
+                <li>Shipping Process from Customer to Tetra Sole:</li>
+                <ul>
+                    <li> Customer-Initiated Returns (i.e Change Size) - customer will be responsible for shipping (i.e. booking and shipping fees) 
+                        via LBC or their chosen courier. Customer to inform Tetra Sole Customer Service once return booking is made by sending 
+                        booking details (i.e. rider’s GPS link, courier way bill tracking # or form)
+                    </li>
+                    <li> 
+                        Wrong Item Delivery - Tetra Sole will be responsible for scheduling pick-up of item from customer’s registered 
+                        shipping address. Customer to coordinate with Tetra Sole Customer Service desired schedule, as needed. Pick-up 
+                        shipping charges c/o Tetra Sole.
+                    </li>
+                </ul>
+
+                <li>
+                    Screening Process and Quality Inspection will apply once item has been received from customer. 
+                    The following policy for inspection will apply:
+                </li>
+                <ul>
+                    <li> Items for exchange must be in unused condition with packaging intact, sales invoice and way bill of shipping 
+                        provider presented.</li>
+                    <li> Items for exchange, due to customer’s damage/mishandling of item will not be entertained.</li>
+                    <li> Items for exchange, due to wrong size ordered by customer will be subject to the availability of the new size request.</li>
+                    <li> Items for exchange, due to wrong size shipped by Tetra Sole will be accepted, subject to the availability of the 
+                        new size request.</li>
+                    <li> Items for exchange, due to factory defect or proven to be damaged upon shipment will be subject to further 
+                        review of management. Photos to show full and close up shot of the item.</li>
+                    <li> Replacement of item due to change of mind of customer to a different style, brand and yet original item bought is in 
+                        good condition will not be entertained.</li>
+                    <li> Replacement of item with the same style, brand, color way of product originally bought by customer, while stock 
+                        supply last.</li>
+                    <li> Replacement of item will not be entertained if the item was found to be an imitation of the original.</li>
+                    <li> Replacement of damaged box will not be entertained. Tetra Sole do not replace packaging due to mishandling of 
+                        courier service.</li>
+                </ul>
+
+                <li> Shipping Fulfillment from Tetra Sole to Customer</li>
+                <ul>
+                    <li> Tetra Sole will re-book the shipping of the item back to the customer.</li>
+                    <li> An email containing new booking number, shipping fees and additional item top-up charges will be 
+                        indicated for customer's reference.</li>
+                    <li> Consider 7-10 working days fulfillment depending on your location.</li>
+                    <li> Customer Initiated Return/Exchange: A standard nationwide shipping fee of P120.00 will apply, payable in 
+                        cash to the courier.</li>
+                    <li> Wrong Delivery: Shipping charges are waived.</li>
+                    <li> Confirm Receipt of Replaced Item: Customer to advise via email inquire@tetraSole.ph if item was received in 
+                        good condition.</li>
+                </ul>
+            </ul>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="../images/Logo/logo.png">
+                    <p>Shoes From Which You Shine Through</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="Order-and-Deliver.html">Order and Deliver</a></p>
+                    <p><a href="size-guide.html">Size Guide</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="cancellation.html">Cancellation Policy</a></p>
+                    <p><a href="refund.html">Refund Policy</a></p>
+                    <p><a href="return-and-exchange.html">Return and Exchange</a></p>
+                    <p><a href="shipping.html">Shipping Policy</a></p>
+                    <p><a href="terms-and-condition.html">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form id="join-us">
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2022, <a href="../home.html">Tetra Sole</a>.</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

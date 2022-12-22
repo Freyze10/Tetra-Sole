@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tetra Sole</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+           <!--Main content-->
+           <header>
+            <div class="logo"><a href="home.html"><img src="images/Logo/logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#nike">Nike<span></span></a></p>
+                            <p><a href="brands.html#adidas">Adidas<span></span></a></p>
+                            <p><a href="brands.html#converse">Converse<span></span></a></p>
+                            <p><a href="brands.html#vans">Vans<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <div class="contact-us-container">
+            <div class="contact-us-form">
+                <div class="contact-us">
+                <h1>Contact us</h1>
+                <p>GET IN TOUCH WITH US ANYTIME.</p>
+                    <form class="w3-card" onsubmit="contactSubmit()">
+                        <div class="first-row-input">
+                            <div>
+                                <label for="name">Name*</label> <br>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div>
+                                <label for="surname">Surname*</label><br>
+                                <input type="text" name="surname" required>
+                            </div>
+                        </div>
+                        <label for="email">Email*</label> <br>
+                        <input type="email" name="email" required> <br>
+                        <label for="company">Company</label> <br>
+                        <input type="text" name="company"> <br>
+                        <label for="contactNumber">Contact Number*</label> <br>
+                        <input type="tel" name="contactNumber" required> <br>
+                        <label for="help">How can we help you?*</label> <br>
+                        <input type="text" name="help" required> <br>
+                        <label for="more">Tell us more about what you're looking for*</label><br>
+                        <textarea name="more" id="more" rows="5" required></textarea><br>
+                        <input type="checkbox" name="agree">
+                        <label for="agree">I Agree To Receive Information With The Latest News, Events And Content From Tetra Sole</label> <br> <br>
+                        <input type="submit" id="submitContact" value="Contact Us">
+                    </form>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <div>
+                    <h1>Other ways to get in touch</h1>
+                    <div class="links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+            <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="images/Logo/logo.png">
+                    <p>Shoes From Which You Shine Through</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="footer-items/Order-and-Deliver.html">Order and Deliver</a></p>
+                    <p><a href="footer-items/size-guide.html">Size Guide</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="footer-Items/cancellation.html">Cancellation Policy</a></p>
+                    <p><a href="footer-Items/refund.html">Refund Policy</a></p>
+                    <p><a href="footer-Items/return-and-exchange.html">Return and Exchange</a></p>
+                    <p><a href="footer-Items/shipping.html">Shipping Policy</a></p>
+                    <p><a href="footer-Items/terms-and-condition.html">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2022, <a href="#">Tetra Sole</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

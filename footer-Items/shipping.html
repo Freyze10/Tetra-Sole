@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Shipping Policy - Tetra Sole</title>
+        <link rel="stylesheet" href="../css/w3.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="../home.html"><img src="../images/Logo/logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="../home.html">Home<span></span></a></li>
+                    <li><a href="../about.html">About Us<span></span></a></li>
+                    <li><a href="../brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="../brands.html#nike">Nike<span></span></a></p>
+                            <p><a href="../brands.html#adidas">Adidas<span></span></a></p>
+                            <p><a href="../brands.html#converse">Converse<span></span></a></p>
+                            <p><a href="../brands.html#vans">Vans<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="../contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <!--Content-->
+        <div class="shipping-policy-container">
+            <h1>Shipping Policy</h1>
+
+            <h3>General Guide</h3>
+            <ol>
+                <li> 
+                    Tetra Sole accredited 2GO and LBC, independent logistics service providers to deliver your order at the designated 
+                    shipping address.
+                </li>
+                <li> 
+                    Tetra Sole and its accredited logistics service providers target a 5-10 working day shipment time table, excluding 
+                    weekends and holidays and depending on customer’s location.
+                </li>
+                <li> 
+                    Shipment during sale events may take longer than the aforementioned time-table. Delays may unfortunately occur 
+                    due to high volume of orders, logistics limitations, geographic restrictions, inclement weather and other instances 
+                    that are beyond our control.
+                </li>
+            </ol>
+
+            <h3>Here are the steps in tracking your parcel:</h3>
+            <ol>
+                <li> 
+                    Customer will be informed via email that your order has been assigned to a tracking number from either 
+                    of the logistics providers. This means that the items are subject for pick up from Tetra Sole main 
+                    fulfillment center on the same day customer receives the notice.
+                </li>
+                <li> 
+                    Customer to receive a call or a text message that shipment is subject for delivery on the same day. 
+                    Customer may directly give instructions to shipping provider should there be any
+                </li>
+                <li> 
+                    If customer will not be available to receive the parcel, kindly provide the exact cash payment, an authorization letter, 
+                    a copy of any valid ID to an authorized representative for timely release of your order.
+                </li>
+                <li> Shipment is valid nationwide for paid transactions.</li>
+            </ol>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="../images/Logo/logo.png">
+                    <p>Shoes From Which You Shine Through</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="Order-and-Deliver.html">Order and Deliver</a></p>
+                    <p><a href="size-guide.html">Size Guide</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="cancellation.html">Cancellation Policy</a></p>
+                    <p><a href="refund.html">Refund Policy</a></p>
+                    <p><a href="return-and-exchange.html">Return and Exchange</a></p>
+                    <p><a href="shipping.html">Shipping Policy</a></p>
+                    <p><a href="terms-and-condition.html">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form id="join-us">
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2022, <a href="../home.html">Tetra Sole</a>.</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

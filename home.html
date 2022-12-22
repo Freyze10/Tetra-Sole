@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tetra Sole</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Main content-->
+        <header>
+            <div class="logo"><a href="home.html"><img src="images/Logo/logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#nike">Nike<span></span></a></p>
+                            <p><a href="brands.html#adidas">Adidas<span></span></a></p>
+                            <p><a href="brands.html#converse">Converse<span></span></a></p>
+                            <p><a href="brands.html#vans">Vans<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <div class="front-page-container">
+            <div class="left-side">
+                <h2 class="w3-animate-left">Shoes From Which You Shine Through</h2>
+                <button class="w3-animate-left"><a href="brands.html">Shop Now!</a></button>
+            </div>
+            <div class="right-part">
+                <div class="logo-container w3-animate-zoom">
+                    <div class="images-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Popular Products-->
+        <div class="popular-products-container">
+            <div class="title" data-aos="fade-right">
+                <h1>Popular Products</h1>
+            </div>
+            <div class="product-items">
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="images/nikeShoes/nike-kd-15-aunt-pearl-1.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            <div>
+                                <label for="size">Size</label>
+                                <input type="number" name="size" min="36" max="46" value="40">
+                            </div>
+                        </div>
+                        <p class="shoe-name">Nike KD 15 Aunt Pearl</p>
+                        <div class="price-cart">
+                            <p class="price">Php 8,895.00</p>
+                            <a href="brands.html#kdAuntPearl"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="images/adidasShoes/adidas-Harden-Vol-5-2.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            <div>
+                                <label for="size">Size</label>
+                                <input type="number" name="size" min="36" max="46" value="40">
+                            </div>
+                        </div>
+                        <p class="shoe-name">Adidas Harden Vol 5</p>
+                        <div class="price-cart">
+                            <p class="price">Php 3,499.00</p>
+                            <a href="brands.html#adidas"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="images/nikeShoes/Drake-Nike-Air-Force-1-Certified-Lover-Boy-1.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            <div>
+                                <label for="size">Size</label>
+                                <input type="number" name="size" min="36" max="46" value="40">
+                            </div>
+                        </div>
+                        <p class="shoe-name">Drake Nike Air Force 1</p>
+                        <div class="price-cart">
+                            <p class="price">Php 6,499.00</p>
+                            <a href="brands.html#drake"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="images/converseShoes/converse-chuck-70-flames-1.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            <div>
+                                <label for="size">Size</label>
+                                <input type="number" name="size" min="36" max="46" value="40">
+                            </div>
+                        </div>
+                        <p class="shoe-name">Converse Chuck 70</p>
+                        <div class="price-cart">
+                            <p class="price">Php 11,799.00</p>
+                            <a href="brands.html#converse"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--New Arrival-->
+        <div class="new-arrival-container">
+            <div class="title" data-aos="fade-right">
+                <h1>New Arrival</h1>
+            </div>
+            <div class="product-items">
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="images/converseShoes/converse-pokemon-2.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            <div>
+                                <label for="size">Size</label>
+                                <input type="number" name="size" min="36" max="46" value="40">
+                            </div>
+                        </div>
+                        <p class="shoe-name">Converse Pokemon</p>
+                        <div class="price-cart">
+                            <p class="price">Php 3,584.00</p>
+                            <a href="brands.html#pokemon"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="images/adidasShoes/adidas-Harden-Vol-6-1.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            <div>
+                                <label for="size">Size</label>
+                                <input type="number" name="size" min="36" max="46" value="40">
+                            </div>
+                        </div>
+                        <p class="shoe-name">Adidas Harden Vol 6</p>
+                        <div class="price-cart">
+                            <p class="price">Php 4,899.00</p>
+                            <a href="brands.html#adidas"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="images/nikeShoes/air-jordan-3-wizards-1.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            <div>
+                                <label for="size">Size</label>
+                                <input type="number" name="size" min="36" max="46" value="40">
+                            </div>
+                        </div>
+                        <p class="shoe-name">Jordan 3 Wizards</p>
+                        <div class="price-cart">
+                            <p class="price">Php 11,295.00</p>
+                            <a href="brands.html#nike"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="images/nikeShoes/dark-mocha-air-jordan-1-1.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            <div>
+                                <label for="size">Size</label>
+                                <input type="number" name="size" min="36" max="46" value="40">
+                            </div>
+                        </div>
+                        <p class="shoe-name">Jordan 1 Dark Mocha</p>
+                        <div class="price-cart">
+                            <p class="price">Php 18,999.00</p>
+                            <a href="brands.html#nike"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Shipping and payment-->
+        <div class="shipping-container">
+            <div class="free-shipping">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h1>Free Shipping</h1>
+                <p>Save up on shipping for a minimum purchase of P3,000.</p>
+            </div>
+            <div class="cod">
+                <i class="fa-solid fa-coins"></i>
+                <h1>COD PAYMENT</h1>
+                <p>We only accept COD from any location</p>
+            </div>
+            <div class="contact-us-email">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>CONTACT US</h1>
+                <p>We'd like to hear from you! Send us your feedback at<br>inquire@tetraSole.ph</p>
+            </div>
+        </div>
+
+        <!--About-->
+        <div class="about-container">
+            <div>
+                <h1>About Us</h1>
+                <p>Tetra Sole is the ultimate destination for all your active lifestyle needs. We are your ally in your sports <br>
+                    and fitness journey in style. Play and Live everyday with our curated products from world<br>
+                    renowned brands such as <b><a href="#">Adidas</a></b>, <b><a href="#">Nike</a></b>, <b><a href="#">Converse</a></b>
+                    and <b><a href="#">Vans</a></b>!</p>
+            </div>
+        </div>
+        
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="images/Logo/logo.png">
+                    <p>Shoes From Which You Shine Through</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="footer-items/Order-and-Deliver.html">Order and Deliver</a></p>
+                    <p><a href="footer-items/size-guide.html">Size Guide</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="footer-Items/cancellation.html">Cancellation Policy</a></p>
+                    <p><a href="footer-Items/refund.html">Refund Policy</a></p>
+                    <p><a href="footer-Items/return-and-exchange.html">Return and Exchange</a></p>
+                    <p><a href="footer-Items/shipping.html">Shipping Policy</a></p>
+                    <p><a href="footer-Items/terms-and-condition.html">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2022, <a href="#">Tetra Sole</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

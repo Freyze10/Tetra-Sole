@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tetra Sole</title>
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="sign-up-container" id="sign-up-form">
+            <form action="home.html" name="form" class="sign-up" id="create-account">
+                <h1 class="title">Sign <span>Up</span></h1>
+
+                <div class="form-input">
+                    <input type="text" id="name" autofocus name="name" class="input" placeholder="Username..." autocomplete="off" required>
+                    <div class="error-message error-message1"></div>
+                </div>
+                <div class="form-input">
+                    <input type="email" id="email" autofocus name="email" class="input" placeholder="Email..." required>
+                </div>
+                <div class="form-input">
+                    <input type="password" id="password" autofocus name="password" class="input" placeholder="Password..." required>
+                    <i class="fa-solid fa-eye-slash icon" onclick="show ()" ></i>
+                    <i class="fa-solid fa-eye icon" onclick="hide()"></i>
+                    <div class="error-message error-message2"></div>
+                </div>
+                <div class="form-input">
+                    <input type="password" id="password-confirm" autofocus name="password-confirm" class="input" placeholder="Confirm Password..." required>
+                    <div class="error-message error-message3"></div>
+                </div>
+                <input type="submit" id="submit" value="Continue">
+            </form>
+        </div>
+        <script src="js/signUp.js"></script>
+    </body>
+</html>

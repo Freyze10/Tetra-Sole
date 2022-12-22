@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cancellation Policy - Tetra Sole</title>
+        <link rel="stylesheet" href="../css/w3.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="../home.html"><img src="../images/Logo/logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="../home.html">Home<span></span></a></li>
+                    <li><a href="../about.html">About Us<span></span></a></li>
+                    <li><a href="../brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="../brands.html#nike">Nike<span></span></a></p>
+                            <p><a href="../brands.html#adidas">Adidas<span></span></a></p>
+                            <p><a href="../brands.html#converse">Converse<span></span></a></p>
+                            <p><a href="../brands.html#vans">Vans<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="../contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <!--Content-->
+        <div class="Cancellation-container">
+            <h1>Cancellation Policy</h1>
+            <h4>Cancellation by Tetra Sole Inc.</h4>
+            <p>Tetra Sole has the right to cancel transactions due to the following transaction types:</p>
+            <p>1) Includes limitations on availability, quality and quantity of ordered item.</p>
+            <p>2) Includes errors in product pricing information</p>
+            <p>3) Assessed to be problematic as identified by our credit and fraud avoidance team.</p>
+            <p>4) Cancelled by our system due to payment failure</p>
+            <p>5) Caused by system error/glitches.</p><br>
+            <div class="cancel-by-customer">
+                <h4>Cancellation by Customer</h4>
+                <p>Should customer wish to cancel his/her order, customer should email inquire@tetraSole.ph immediately. Cancellation due 
+                    to change of mind of customer on purchased product and yet item is in good condition will not be entertained.</p>
+                <h4>Allowable Window for Cancellation</h4>
+                <p>1) Customer is allowed to cancel his/her order/s within 24 hours from the time order has been placed. 
+                    However, it would be ideal if intent can be made on the same purchase date.</p>
+                <p>2) Cancellation will not be allowed if order has undergone shipping.</p>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="../images/Logo/logo.png">
+                    <p>Shoes From Which You Shine Through</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="Order-and-Deliver.html">Order and Deliver</a></p>
+                    <p><a href="size-guide.html">Size Guide</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="cancellation.html">Cancellation Policy</a></p>
+                    <p><a href="refund.html">Refund Policy</a></p>
+                    <p><a href="return-and-exchange.html">Return and Exchange</a></p>
+                    <p><a href="shipping.html">Shipping Policy</a></p>
+                    <p><a href="terms-and-condition.html">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form id="join-us">
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2022, <a href="../home.html">Tetra Sole</a>.</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
