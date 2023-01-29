@@ -103,7 +103,7 @@ document.getElementsByClassName('btn-buy')[0].addEventListener('click', () => {
             cartContent.removeChild(cartContent.firstChild);
         }
         i = 0;
-        total = 0;
+        total *= 0;
         document.getElementsByClassName('total-price')[0].innerText = "Php. 0.00";
         document.getElementById('total').innerHTML = i;
     } else {
